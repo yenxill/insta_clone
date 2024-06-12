@@ -1,0 +1,204 @@
+:root {
+  --body-bg: #fafafa;
+  --box-bg: #fff;
+  --box-border-color: #dbdbdb;
+  --txt-color: #262626;
+  --txt-second-color: #8e8e8e;
+  --light-blue: #0095f6;
+  --dark-blue: #00376b;
+  --fb-color: #385185;
+}
+
+.dark {
+  --body-bg: #151515;
+  --box-bg: #353535;
+  --box-border-color: #666565;
+  --txt-color: #d2d2d2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--txt-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+button {
+  border: none;
+  /* input 테두리 */
+  outline: none;
+  background-color: transparent;
+}
+
+.btn-blue {
+  width: 100%;
+  padding: 12px 0;
+  color: #fff;
+  background-color: var(--light-blue);
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dark-logo {
+  display: none;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.form-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+}
+
+.box {
+  width: 100%;
+  border: 1px solid var(--box-border-color);
+  border-radius: 4px;
+  text-align: center;
+  background-color: var(--box-bg);
+}
+
+.input-box {
+  padding: 40px;
+}
+
+.logo {
+  width: 175px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 100%;
+  object-fit: contain;
+}
+
+img {
+  width: 50px;
+}
+
+.login-form {
+  margin-top: 40px;
+}
+
+.animate-input {
+  position: relative;
+  height: 36px;
+  margin: 6px 0;
+  padding: 0 8px;
+  border: 1px solid var(--box-border-color);
+  border-radius: 4px;
+}
+
+.animate-input input {
+  width: 100%;
+  height: 100%;
+}
+
+.animate-input span {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  font-size: 12px;
+  color: var(--box-border-color);
+  pointer-events: none;
+  transition: all 200ms ease-in-out;
+}
+
+.animate-input.active{
+  padding: 4px 8px 0;
+}
+
+.animate-input.active span {
+  top: 2px;
+  font-size: 10px;
+}
+
+.userpw button {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  display: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.animate-input.active button {
+  display: inline;
+}
+
+/*타입 submit인 버튼 disabled  */
+button[type="submit"]:disabled {
+  cursor: not-allowed;
+  background-color: rgba(0, 149, 246, 0.3);
+}
+
+.or-box {
+  display: flex;
+  align-items: center;
+}
+
+/*odd: 홀수 | even : 짝수*/
+.or-box div:nth-child(odd){
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--box-border-color);
+}
+
+/*.or-box div:nth-child(2)*/
+.or-box div:nth-child(even) {
+  margin: 30px 10px;
+  color: var(--txt-second-color);
+  font-weight: bold;
+
+}
+
+.fb-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fb-btn img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  margin-right: 8px;
+}
+
+.fb-btn span {
+  color: var(--fb-color);
+  font-weight: bold;
+}
+
+.forgot-pw {
+  display: block;
+  margin-top: 22px;
+  font-size: 12px;
+  color: var(--dark-blue);
+}
