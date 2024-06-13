@@ -30,10 +30,37 @@
         </h1>
 
         <form class="login-form" id="login-form" action="">
+          <p>친구들듸 사진과 동영상을 보려면 가입하세요.</p>
+
+          <div class="fb-btn">
+            <a href="">
+              <button class="btn-blue" id="submit-btn" type="submit" disabled>
+                <img src="../assets/images/facebook-icon.png" alt="facebook-icon">Facebook으로 로그인
+              </button>
+            </a>
+          </div>
+
+          <div class="or-box">
+            <div></div>
+            <div>또는</div>
+            <div></div>
+          </div>
+  
           <div class="animate-input">
             <input id="userid" type="text">
-            <span>전화번호, 사용자 이름 또는 이메일</span>
+            <span>휴대폰 번호 또는 이메일 주소</span>
           </div>
+
+          <div class="animate-input username">
+            <input id="username" type="text">
+            <span>성명</span>
+          </div>
+
+          <div class="animate-input usernikname">
+            <input id="usernikname" type="text">
+            <span>사용자 이름</span>
+          </div>
+
 
           <div class="animate-input userpw">
             <input id="userpw" type="password">
@@ -41,30 +68,18 @@
             <button id="pw-visible" type="button">비밀번호 표시</button>
           </div>
 
-          <button class="btn-blue" id="submit-btn" type="submit" disabled>로그인</button>
+        <a class="forgot-pw" href="">
+          저희 서비스를 이용하는 사람이 회원님의 연락처 정보를 Instagram에 업로드했을 수도 있습니다. 더 알아보기
+        </a>
+
+          <button class="btn-blue" id="submit-btn" type="submit" disabled>가입</button>
         </form>
-
-        <div class="or-box">
-          <div></div>
-          <div>또는</div>
-          <div></div>
-        </div>
-
-        <div class="fb-btn">
-          <a href="">
-            <img src="../assets/images/facebook-icon.png" alt="facebook-icon">
-            <span>Facebook으로 로그인</span>
-          </a>
-        </div>
-
-        <a class="forgot-pw" href="">비밀번호를 잊으셨나요?</a>
-
       </div>
 
 
       <div class="box join-box">
-        <p>계정이 없으신가요?
-        <span>가입하기</span></p>
+        <p>계정이 있으신가요?
+        <span>로그인하기</span></p>
       </div>
 
       <p class="app-txt">앱을 다운로드하세요.</p>
