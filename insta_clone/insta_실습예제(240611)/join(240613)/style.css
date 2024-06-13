@@ -54,6 +54,11 @@ button {
   cursor: pointer;
 }
 
+.btn-blue img {
+  width: 12px;
+
+}
+
 .dark-logo {
   display: none;
 }
@@ -191,21 +196,36 @@ button[type="submit"]:disabled {
 
 }
 
+.txt-login {
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--txt-second-color);
+}
+
 .fb-btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 12px 0;
+  margin-top: 22px;
+  background-color: var(--light-blue);
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+
 }
 
 .fb-btn img {
   width: 16px;
   height: 16px;
   object-fit: contain;
-  margin-right: 8px;
+  /* filter: invert(200%); */
+  /* margin-right: 30px; */
 }
 
 .fb-btn span {
-  color: var(--fb-color);
+  color: #fff;
   font-weight: bold;
 }
 
@@ -213,7 +233,12 @@ button[type="submit"]:disabled {
   display: block;
   margin-top: 22px;
   font-size: 11px;
-  color: var(--dark-blue);
+  color: var(--txt-color);
+}
+
+.forgot-pw span {
+  font-weight: bold;
+  color: var(--light-blue);
 }
 
 body.dark .forgot-pw {
