@@ -94,5 +94,39 @@ function pwMode() {
   // 2. pwVisible.innerHTML => '비밀번호 표시'로 변경
 }
 
-
 pwVisible.addEventListener('click', pwMode)
+
+//Darkmode / Lightmode
+let modeBtn = document.getElementById('mode-toggle');
+//console.log(modeBtn)
+
+function modeToggle(e) {
+  e.preventDefault();
+  // 1.body 태그에 dark 라는 class toggle
+  // dark 라는 class가 있으면 remove, 없으면 add
+  let body = document.querySelector('body');
+  body.classList.toggle('dark')
+
+  //document.querySelector('body').classList.toggle('dark');
+  //console.log( document.querySelector('body'))
+
+  // body에 dark라는 클래스가 있을 때
+  // modeBtn.innerHTML = 'Lightmode'
+  // classList.contans()
+  //console.log(body.classList.toggle('dark'));
+
+  if(body.classList.contains('dark')) {
+    modeBtn.innerHTML = 'Lightmode';
+  } else {
+    // body에 dark라는 클래스가 없을 때
+    // modeBtn.innerHTML = 'Darkmode'
+   modeBtn.innerHTML = 'Darkmode';
+  }
+
+  //삼향연산자
+  //조건? 참일 때 : 거짓일 때
+  //modeBtn.innerHTML = body.classList.contains('dark')? 'Lightmode' : 'Darkmode';
+
+}
+
+modeBtn.addEventListener('click', modeToggle);
