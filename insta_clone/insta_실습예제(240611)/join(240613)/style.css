@@ -46,6 +46,7 @@ button {
 .btn-blue {
   width: 100%;
   padding: 12px 0;
+  margin-top: 22px;
   color: #fff;
   background-color: var(--light-blue);
   border-radius: 8px;
@@ -211,7 +212,7 @@ button[type="submit"]:disabled {
 .forgot-pw {
   display: block;
   margin-top: 22px;
-  font-size: 12px;
+  font-size: 11px;
   color: var(--dark-blue);
 }
 
