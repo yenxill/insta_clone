@@ -14,3 +14,48 @@
 .header img {
   width: 200px;
 }
+
+.post1,
+.post2 {
+  border: 5px solid forestgreen;
+}
+
+.post-yj img,
+.post-la img{
+  width: 80px;
+  border: 8px solid rebeccapurple;
+  border-radius: 50px;
+}
+
+.post-yj span,
+.post-la span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.post-yj p,
+.post-la p {
+  font-size: 20px;
+}
+
+.post-dog {
+  width: 5px;
+}
+
+.comment img {
+  width: 15px;
+}
+
+.comment p {
+  font-weight: bold;
+  
+}
+
+.comment span {
+  font-weight: normal;
+}
+
+.time {
+  font-size: 10px;
+}
+
