@@ -15,14 +15,17 @@ let userId = document.getElementById('user-id');
 let userPw = document.getElementById('user-pw');
 //console.log(userEmail, userName, userId, userPw)
 
+let pwBtn = document.getElementById('pw-btn');
+//console.log(pwBtn)
+
 function updateInputState(val, activeVar) {
-  if(val.vaul.trim().length > 0) {
+  if(val.value.trim().length > 0) {
     //animate-input 에 active class add
-    val.parentElemet.classList.add('ative');
+    val.parentElement.classList.add('active');
     activeVar = true
   } else {
     //animate-input 에 active class remove
-    val.parentElemet.classList.remove('active');
+    val.parentElement.classList.remove('active');
     activeVar = false;
   }
 
@@ -38,6 +41,45 @@ animateInput.forEach((item) => {
     //이벤트 대상만 log 나타남 
     //console.log(input)
 
+    if(input == userEmail) {
+      //console.log('같다')
+      emailAct = updateInputState(input, emailAct);
+    } else if(input == userName) { 
+      nameAct = updateInputState(input, nameAct);
+    } else if(input == userId) {
+      idAct = updateInputState(input, idAct);
+    } else if(input == userPw){
+      pwAct = updateInputState(input, pwAct);
+    }
 
+    let allTrue = emailAct && nameAct && idAct && pwAct;
+    if(allTrue) {
+      // allTrue 안 값이 모두 참일 때 
+      // joinBtn disabled 속성 remove
+      joinBtn.removeAttribute('disabled');
+      // joinBtn.setAttribute('disabled', false);
+    } else {
+      joinBtn.setAttribute('disabled', true);
+    }
   })
 })
+
+//비밀번호 표시 or 숨기기
+function modeToggle() {
+  // 삼항연산자
+  // 조건 ? true : false
+  let pwType = userPw.getAttribute('type') == 'password';
+  //console.log(pwType)
+
+  // userPw type : password => text | pwBtn.innerHTML = '숨기기'
+  userPw.setAttribute('type', pwType ? 'text' : 'password');
+  // userPw type : text => password | pwBtn.innerHTML = '비밀번호 표시'
+  pwBtn.innerHTML = pwType ? '숨기기' : '비밀번호 표시';
+
+  // userPw.getAttribute('type') == "password"
+  //? (userPw.setAttribute("type", "text"), (pwBtn.innerHTML = "숨기기"))
+  //: (userBtn.setAttribute("type", "text"), (pwBtn.innerHTML = "비밀번호 표시"))
+  
+}
+
+pwBtn.addEventListener('click', modeToggle);
