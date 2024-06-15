@@ -1,7 +1,31 @@
+:root {
+  --white: #fff;
+  --body-bg: #fafafa;
+  --box-border-color: #dbdbdb;
+  --txt-color: #262626;
+  --txt-second-color: #8e8e8e;
+  --light-blue: #0095f6;
+  --dark-blue: #385185;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;  
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
 .header {
@@ -15,10 +39,18 @@
   width: 200px;
 }
 
-.post1,
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px;
+  /* flex-grow: 1; */
+}
+
+/* .post1,
 .post2 {
   border: 5px solid forestgreen;
-}
+} */
 
 .post-yj img,
 .post-la img{
@@ -27,28 +59,55 @@
   border-radius: 50px;
 }
 
-.post-yj span,
-.post-la span {
-  font-size: 30px;
+.post-list {
+  border: 3px solid var(--txt-second-color);
+}
+
+.post-yj {
+  display: flex;
+  border: 2px solid var(--txt-second-color);
+}
+
+.img-dog img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.yj-txt {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0 10px;
+}
+
+.yj-txt span {
+  font-size: 20px;
   font-weight: bold;
 }
 
-.post-yj p,
-.post-la p {
-  font-size: 20px;
+.yj-txt p {                
+  font-size: 13px;
 }
 
-.post-dog {
-  width: 5px;
+.comment {
+  margin: 15px auto;
+  padding: 0px 15px;
 }
 
-.comment img {
-  width: 15px;
+.post-icon p {
+  /* width: 300px; */
+  background-image: url(./images/icons2.png);
+  /* background-repeat: no-repeat; */
+  /* background-size: 10px 10px;
+  background-position: -1000px -10px; */
+}
+
+.post-txt {
+  line-height: 25px;
 }
 
 .comment p {
   font-weight: bold;
-  
 }
 
 .comment span {
@@ -59,3 +118,25 @@
   font-size: 10px;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px 15px;
+  border-top: 2px solid var(--txt-second-color);
+}
+
+
+
+
+ul {
+  border: 4px solid indianred;
+}
+
+ul div img {
+  width: 30px;
+}
+
+.post-dog {
+  width: 5px;
+}
