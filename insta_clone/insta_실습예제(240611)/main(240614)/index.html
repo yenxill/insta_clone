@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instagram main(240614)실습예제</title>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/290ce089ec.js" crossorigin="anonymous"></script>
+
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
@@ -13,13 +16,18 @@
 </head>
 <body>
   <div class="wrapper">
-    <div class="header">
+    <header>
       <a href="">
         <img src="../assets/images/logo-light.png" alt="">
       </a>
 
-      <a href=""><img src="./images/icons2.png" alt=""></a>
-    </div>
+      <ul>
+        <li><i class="fa-regular fa-square-plus"></i></li>
+        <li><i class="fa-regular fa-compass"></i></li>
+        <li><i class="fa-regular fa-heart"></i></li>
+        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+      </ul>
+    </header>
 
     <main>
       <section class="post-list">
@@ -28,11 +36,13 @@
             <div>
               <img src="./images/potato.jpeg">
             </div>
-  
+
             <div class="yj-txt">
               <span>yejin</span>
               <p>Sejong, South Korea </p>
             </div>
+            
+            <i class="fa-solid fa-ellipsis"></i>
           </div>
           
           <div class="img-dog">
@@ -40,11 +50,13 @@
           </div>
   
           <div class="comment">
-            <div class="post-icon">
-              <p></p>
+            <div class="icon-list">
+              <p class="post-icon"></p>
+              <p class="post-icon1"></p>
+              <p class="post-icon2"></p>
             </div>
 
-            <p>dog123 외 여러명이 좋아합니다.</p>
+            <p class="like-txt">dog123 외 여러명이 좋아합니다.</p>
 
             <div class="post-txt">
               <p>dog123 <span>멍멍</span></p>
@@ -63,74 +75,98 @@
       </section>
 
 
-      <section class="post2">
-        <div class="post-la">
-          <img src="./images/멍1.jpeg">
-          <span>lalala</span>
-          <p>Daejeon</p>
-        </div>
+      <section class="post-list">
+        <div class="post2">
+          <div class="post-la">
+            <div>
+              <img src="./images/멍1.jpeg">
+            </div>
 
-        <div class="post-dog">
-          <img src="./images/멍1.jpeg" alt="post-img1">
-        </div>
-
-        <div class="comment">
-          <img src="./images/icons2.png" alt="">
-          <p>idididid 외 여러명이 좋아합니다./p>
-          <p>idididid <span>Lorem, ipsum dolor.</span></p>
-  
-          <p class="time">2시간 전</p>
-        </div>
-        
-
-        <p>댓글달기...</p>
-        <button type="button">게시</button>
-
-      </section>
-
-      <ul>
-        <section class="user-sidebar">
-          <div>
-            <img src="./images/potato.jpeg" alt="">
+            <div class="la-txt">
+              <span>lalala</span>
+              <p>Daejeon</p>
+            </div>
+            
+            <i class="fa-solid fa-ellipsis"></i>
           </div>
-          <span>yejin</span>
-          <p>이예진</p>
-  
           
-        <div class="user-recommend">
-          <p>회원님을 위한 추천</p>
-          <span>모두보기</span>
-        </div>
-
-        <li class="user-list">
-          <div>
-            <a href=""><img src="./images/멍1.jpeg" alt=""></a>
-              <p>zzz_zzz</p>
-              <p>Instagram 신규 가입</p>
+          <div class="img-dog">
+            <img src="./images/멍1.jpeg" alt="img-dog">
           </div>
   
-          <div>
-            <a href=""><img src="./images/멍2.jpeg" alt="zzz_zzz"></a>
-              <p>lorem</p>
-              <p>회원님을 위한 추천</p>
-          </div>
-              
-          <div>
-            <a href=""><img src="./images/user.jpeg" alt="cldieid"></a>
-              <p>cldieid</p>
-              <p>회원님을 위한 추천</p>
-          </div>
-              
-          <div>
-            <a href=""><img src="./images/user.jpeg" alt="abcdefg"></a>
-              <p>abcdefg</p>
-              <p>회원님을 위한 추천</p>
-          </div>
-              
-        </li>
-      </section>
+          <div class="comment">
+            <div class="icon-list">
+              <p class="post-icon"></p>
+              <p class="post-icon1"></p>
+              <p class="post-icon2"></p>
+            </div>
+          
+          <p class="like-txt">idididid 외 여러명이 좋아합니다.</p>
 
-      </ul>
+          <div class="post-txt">
+            <p>idididid <span>Lorem, ipsum.</span></p>
+          </div> 
+
+            <p class="time">2시간 전</p>
+          </div>
+
+          <footer>
+            <p>댓글달기...</p>
+            <button type="button">게시</button>
+          </footer>
+
+        </div>
+        </section>
+
+
+
+  
+        <ul>
+          <section class="user-sidebar">
+            <div>
+              <img src="./images/potato.jpeg" alt="">
+            </div>
+            <span>yejin</span>
+            <p>이예진</p>
+    
+            
+          <div class="user-recommend">
+            <p>회원님을 위한 추천</p>
+            <span>모두보기</span>
+          </div>
+  
+          <li class="user-list">
+            <div>
+              <a href=""><img src="./images/멍1.jpeg" alt=""></a>
+                <p>zzz_zzz</p>
+                <p>Instagram 신규 가입</p>
+            </div>
+    
+            <div>
+              <a href=""><img src="./images/멍2.jpeg" alt="zzz_zzz"></a>
+                <p>lorem</p>
+                <p>회원님을 위한 추천</p>
+            </div>
+                
+            <div>
+              <a href=""><img src="./images/user.jpeg" alt="cldieid"></a>
+                <p>cldieid</p>
+                <p>회원님을 위한 추천</p>
+            </div>
+                
+            <div>
+              <a href=""><img src="./images/user.jpeg" alt="abcdefg"></a>
+                <p>abcdefg</p>
+                <p>회원님을 위한 추천</p>
+            </div>
+                
+          </li>
+        </section>
+  
+        </ul>
+        </div>
+
+        
 
 
 
