@@ -33,7 +33,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 18px 150px;
-  border: 3px solid darkblue;
+  border: 1px solid var(--box-border-color);
+  background-color: #fff;
 }
 
 header img {
@@ -57,13 +58,18 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 800px;
+  align-items: center;
+  width: 500px;
+  margin: auto;
 }
 
 
 /* main(post-list) */
 .post-list {
-  border: 3px solid var(--box-border-color);
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 7px;
+  border: 1px solid var(--box-border-color);
 }
 
 .post-yj {
@@ -74,8 +80,7 @@ main {
   /* border-top: 1px solid var(--light-blue); */
 }
 
-.post-yj img,
-.post-la img{
+.post-yj img {
   width: 65px;
   border: 1px solid #fff;
   border-radius: 50px;
@@ -89,10 +94,11 @@ main {
 
 .yj-txt {
   margin: auto;
-  padding-right: 535px;
+  padding-right: 235px;
 }
 
-.yj-txt span {
+.yj-txt span,
+.la-txt span {
   font-size: 20px;
   font-weight: bold;
 }
@@ -103,7 +109,8 @@ main {
   margin-right: 15px;
 }
 
-.yj-txt p {                
+.yj-txt p,
+.la-txt p {                
   font-size: 13px;
 }
 
@@ -192,3 +199,77 @@ footer button {
   color: var(--light-blue);
 }
 
+.post-la {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 20px;
+  /* border-top: 1px solid var(--light-blue); */
+}
+
+.post-la img{
+  width: 60px;
+  height: 62px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+}
+
+.la-txt {
+  margin: auto;
+  padding-right: 305px;
+}
+
+.img-dog2 img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.user-sidebar {
+  padding: 15px 20px;
+  margin: 40px 50px ;
+  background-color: #fff;
+  border-radius: 7px;
+  border: 1px solid var(--box-border-color)
+}
+
+.user-sidebar span {
+  font-weight: bold;
+}
+
+.user-sidebar p {
+  color: var(--txt-second-color);
+}
+
+.user-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+
+.user-recommend{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.user-list {
+  background-color: var(--white);
+
+}
+
+.user-list img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+
+.list-txt {
+  /* display: flex; */
+  /* justify-content: center; */
+  align-items: center;
+  margin: 25px 60px;
+  margin-top: -50px;
+  /* padding: auto; */
+}
