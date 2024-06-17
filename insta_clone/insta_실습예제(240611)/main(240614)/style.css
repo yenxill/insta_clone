@@ -55,23 +55,46 @@ header li {
 }
 
 main {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
+  align-items: center; */
+  width: 550px;
   margin: auto;
 }
 
+.main-post {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-post-list {
+  border: 2px solid red;
+}
 
 /* main(post-list) */
 .post-list {
+  position: relative;
+  width: 450px;
   margin: 10px;
   background-color: #fff;
   border-radius: 7px;
   border: 1px solid var(--box-border-color);
 }
 
+.img-dog {
+  position: relative;
+  /* width: 100%; */
+  height: 300px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-dog img{
+  width: 100%;
+  height: 300px;
+}
 .post-yj {
   display: flex;
   justify-content: space-between;
@@ -81,16 +104,17 @@ main {
 }
 
 .post-yj img {
-  width: 65px;
+  width: 45px;
   border: 1px solid #fff;
   border-radius: 50px;
 }
 
-.img-dog img {
-  width: 100%;
-  height: 100%;
+
+/* .img-dog img {
+  width: 50%;
+  height: 50%;
   object-fit: cover;
-}
+} */
 
 .yj-txt {
   margin: auto;
@@ -99,19 +123,19 @@ main {
 
 .yj-txt span,
 .la-txt span {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 .post-yj i {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: bold;
   margin-right: 15px;
 }
 
 .yj-txt p,
 .la-txt p {                
-  font-size: 13px;
+  font-size: 10px;
 }
 
 .comment {
@@ -124,6 +148,10 @@ main {
   justify-content: space-between;
   padding: 10px 0;
   margin-top: -30px;
+}
+
+.icon-list-one {
+  display: flex;
 }
 
 .post-icon {
@@ -141,6 +169,7 @@ main {
   width: 40px;
   height: 40px;
   border: 4px solid #fff;
+  margin-right: 100px ;
   background-image: url(./images/icons2.png);
   background-position: left;
   background-repeat: no-repeat;
@@ -199,6 +228,7 @@ footer button {
   color: var(--light-blue);
 }
 
+
 .post-la {
   display: flex;
   justify-content: space-between;
@@ -208,8 +238,8 @@ footer button {
 }
 
 .post-la img{
-  width: 60px;
-  height: 62px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #fff;
   border-radius: 50px;
 }
@@ -219,15 +249,16 @@ footer button {
   padding-right: 305px;
 }
 
-.img-dog2 img {
+/* .img-dog2 img {
   width: 100%;
   height: 500px;
   object-fit: cover;
-}
+} */
 
 .user-sidebar {
-  padding: 15px 20px;
-  margin: 40px 50px ;
+  width: 700px;
+  padding: 80px;
+  margin: 0 180px ;
   background-color: #fff;
   border-radius: 7px;
   border: 1px solid var(--box-border-color)
