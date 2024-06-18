@@ -14,6 +14,10 @@
   box-sizing: border-box;  
 }
 
+body {
+  background-color: var(--body-bg);
+}
+
 li {
   list-style: none;
 }
@@ -54,32 +58,67 @@ header li {
   width: 200px;
 }
 
+/* main */
 main {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-  width: 550px;
-  margin: auto;
+  position: relative;
+  width: 900px;
+  padding: 20px;
+  margin: 50px auto;
 }
 
-.main-post {
+.post-list {
+
+}
+
+.post-profile {
   display: flex;
   justify-content: space-between;
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
 }
 
-.main-post-list {
-  border: 2px solid red;
+.user-txt {
+  padding: 0 7px;
+
+  span {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 10px;
+  }
 }
+
+/* main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 550px;
+  margin: auto;
+} */
+
+/* .main-one {
+  display: flex;
+  justify-content: space-between;
+} */
+
+/* .main-post-list {
+  border: 2px solid red;
+} */
 
 /* main(post-list) */
-.post-list {
+/* .post-list {
   position: relative;
   width: 600px;
   margin: 10px;
   background-color: #fff;
   border-radius: 7px;
   border: 1px solid var(--box-border-color);
-}
+} */
 
 .img-dog {
   position: relative;
@@ -127,7 +166,7 @@ main {
   object-fit: cover;
 } */
 
-.yj-txt {
+/* .yj-txt {
   padding: 0 7px;
 }
 
@@ -141,7 +180,7 @@ main {
 .yj-txt p,
 .la-txt p {                
   font-size: 10px;
-}
+} */
 
 .comment {
   margin: 23px auto;
@@ -258,11 +297,13 @@ footer button {
 } */
 
 .user-sidebar {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 0px;
   width: 300px;
   padding: 12px;
+  /* margin-top: 80px;
+  margin-right: auto; */
   /* margin: 0 180px ; */
   background-color: #fff;
   border-radius: 7px;
@@ -276,6 +317,7 @@ footer button {
 .user-sidebar p {
   color: var(--txt-second-color);
 }
+
 
 .user-profile img {
   width: 50px;
