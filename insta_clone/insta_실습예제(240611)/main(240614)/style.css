@@ -190,13 +190,14 @@ main {
 }
 
 .like-txt {
-  margin-bottom: 15px;
+  margin: 10px auto;
+  /* margin-bottom: 15px; */
   font-weight: bold;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .post-txt {
-  font-size: 17px;
+  font-size: 14px;
   line-height: 32px;
 }
 
@@ -257,9 +258,12 @@ footer button {
 } */
 
 .user-sidebar {
-  width: 700px;
-  padding: 80px;
-  margin: 0 180px ;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  width: 300px;
+  padding: 12px;
+  /* margin: 0 180px ; */
   background-color: #fff;
   border-radius: 7px;
   border: 1px solid var(--box-border-color)
