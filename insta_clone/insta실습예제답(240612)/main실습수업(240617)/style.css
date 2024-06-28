@@ -1,3 +1,13 @@
+:root {
+  --white: #fff;
+  --body-bg: #fafafa;
+  --box-border-color: #dbdbdb;
+  --txt-color: #262626;
+  --txt-second-color: #8e8e8e;
+  --light-blue: #0095f6;
+  --dark-blue: #385185;
+}
+
 i {
   cursor: pointer;
 }
