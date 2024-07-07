@@ -73,6 +73,10 @@ main {
   border-radius:  3px;
 }
 
+.post-list i {
+  cursor: pointer;
+}
+
 .post-profile {
   display: flex;
   justify-content: space-between;
@@ -87,14 +91,15 @@ main {
 }
 
 .user-txt {
-  display: flex; /* Flexbox를 사용하여 내부 요소를 정렬 */
+  display: flex; 
   justify-content: center;
-  flex-direction: column; /* 요소들을 세로로 정렬 */
-  margin-right: 390px;
+  flex-direction: column; 
+  /* margin-right: 390px; */
 
   span {
     font-size: 16px;
     font-weight: bold;
+    margin-right: 450px;
   }
 
   p {
