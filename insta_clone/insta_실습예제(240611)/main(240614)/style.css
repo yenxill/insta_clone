@@ -14,6 +14,10 @@
   box-sizing: border-box;  
 }
 
+body {
+  background-color: var(--body-bg);
+}
+
 li {
   list-style: none;
 }
@@ -54,31 +58,53 @@ header li {
   width: 200px;
 }
 
+/* main */
 main {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-  width: 550px;
-  margin: auto;
+  position: relative;
+  max-width: 900px;
+  padding: 20px;
+  margin: 50px auto;
 }
 
-.main-post {
+.post-list {
+  width: 614px;
+  margin-bottom: 20px;
+  border: 1px solid red;
+  border-radius:  3px;
+}
+
+.post-list i {
+  cursor: pointer;
+}
+
+.post-profile {
   display: flex;
   justify-content: space-between;
+  padding: 8px 20px;
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid rebeccapurple;
+  }
 }
 
-.main-post-list {
-  border: 2px solid red;
-}
+.user-txt {
+  display: flex; 
+  justify-content: center;
+  flex-direction: column; 
+  /* margin-right: 390px; */
 
-/* main(post-list) */
-.post-list {
-  position: relative;
-  width: 600px;
-  margin: 10px;
-  background-color: #fff;
-  border-radius: 7px;
-  border: 1px solid var(--box-border-color);
+  span {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 450px;
+  }
+
+  p {
+    font-size: 11px;
+  }
 }
 
 .img-dog {
@@ -93,6 +119,96 @@ main {
   }
 }
 
+
+.icon-list {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 5px;
+  cursor: pointer;
+}
+
+.icon-list-one {
+  display: flex;
+  text-align: center;
+  padding: 0px 10px;
+}
+
+.post-icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-image: url(./images/icons2.png);
+  background-size: 670px;
+  background-position: left -182px bottom -33px;
+  background-repeat: no-repeat;
+  transform: scale(0.8);
+}
+
+.post-icon1 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 0 3px;
+  background-image: url(./images/icons2.png);
+  background-size: 660px;
+  background-position: left -237px bottom -64px;
+  background-repeat: no-repeat;
+  transform: scale(0.8);
+ 
+}
+
+.post-icon2 {
+  width: 30px;
+  height: 30px;
+  background-image: url(./images/icons2.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 710px;
+  background-position: left -387px bottom -2px;
+  background-repeat: no-repeat;
+  transform: scale(0.7);
+
+}
+
+.comment{
+  /* margin: 23px auto; */
+  padding: 0px 15px;
+  /* border: 3px solid blue; */
+}
+
+.like-txt {
+  margin: 10px auto;
+  /* margin-bottom: 15px; */
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.post-txt {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.post-txt p {
+  font-weight: bold;
+}
+
+.post-txt i {
+  cursor: pointer;
+}
+
+.comment span {
+  font-weight: normal;
+}
+
+.time {
+  margin-top: 15px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: var(--txt-second-color);
+}
 
 .post-people {
   display: flex;
@@ -121,97 +237,8 @@ main {
   margin-right: 15px;
 }
 
-/* .img-dog img {
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
-} */
-
-.yj-txt {
-  padding: 0 7px;
-}
-
-.yj-txt span,
-.la-txt span {
-  font-size: 15px;
-  font-weight: bold;
-}
-
-
-.yj-txt p,
-.la-txt p {                
-  font-size: 10px;
-}
-
-.comment {
-  margin: 23px auto;
-  padding: 0px 15px;
-}
-
-.icon-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
-  margin-top: -17px;
-}
-
-.icon-list-one {
-  display: flex;
-}
-
-.post-icon {
-  width: 28px;
-  height: 25px;
-  background-image: url(./images/icons2.png);
-  background-position: left;
-  background-size: 670px;
-  background-position: left -182px bottom -33px;
-}
-
-.post-icon1 {
-  width: 28px;
-  height: 25px;
-  margin: 0 10px;
-  background-image: url(./images/icons2.png);
-  background-position: left;
-  background-size: 660px;
-  background-position: left -237px bottom -64px;
-}
-
-.post-icon2 {
-  width: 25px;
-  height: 29px;
-  background-image: url(./images/icons2.png);
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: 710px;
-  background-position: left -387px bottom -2px;
-}
-
-.like-txt {
-  margin-bottom: 15px;
-  font-weight: bold;
-  font-size: 17px;
-}
-
-.post-txt {
-  font-size: 17px;
-  line-height: 32px;
-}
-
-.post-txt p {
-  font-weight: bold;
-}
-
-.comment span {
-  font-weight: normal;
-}
-
-.time {
-  margin-top: 20px;
-  font-size: 14px;
-  color: var(--txt-second-color);
+.posting-btn {
+  cursor: pointer;
 }
 
 footer {
@@ -228,6 +255,35 @@ footer button {
   font-weight: bold;
   color: var(--light-blue);
 }
+
+footer input {
+  flex-grow: 1;
+  border: 1px solid var(--body-bg);
+  background-color: var(--body-bg);
+}
+
+/* .img-dog img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+} */
+
+/* .yj-txt {
+  padding: 0 7px;
+}
+
+.yj-txt span,
+.la-txt span {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.yj-txt p,
+.la-txt p {                
+  font-size: 10px;
+} */
+
 
 
 .post-la {
@@ -257,9 +313,14 @@ footer button {
 } */
 
 .user-sidebar {
-  width: 700px;
-  padding: 80px;
-  margin: 0 180px ;
+  position: fixed;
+  top: 20px;
+  right: 0px;
+  width: 300px;
+  padding: 12px;
+  /* margin-top: 80px;
+  margin-right: auto; */
+  /* margin: 0 180px ; */
   background-color: #fff;
   border-radius: 7px;
   border: 1px solid var(--box-border-color)
@@ -272,6 +333,7 @@ footer button {
 .user-sidebar p {
   color: var(--txt-second-color);
 }
+
 
 .user-profile img {
   width: 50px;
